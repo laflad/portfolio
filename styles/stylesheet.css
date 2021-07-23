@@ -2,10 +2,6 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
-.links:hover {
-  background-color: hsl(179, 77%, 93%);
-  font-weight: bold;
-}
 h1 {
   color: hsl(179, 77%, 32%);
 }
@@ -20,6 +16,16 @@ h3 {
 
 p {
   color: hsl(0, 0%, 32%);
+}
+
+aside {
+  float: left;
+  padding-right: 10px;
+}
+
+.links:hover {
+  background-color: hsl(179, 77%, 93%);
+  font-weight: bold;
 }
 
 .img1 {
@@ -47,5 +53,5 @@ p {
 }
 
 .shr {
-  background-color:  hsl(0, 0%, 95%);
+  background-color:  hsl(0, 0%, 94%);
 }
