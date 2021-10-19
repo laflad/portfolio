@@ -54,6 +54,46 @@ p {
   color: #954F9E;
 }
 
+.fa-canadian-maple-leaf {
+  color: red;
+  display: inline-block;
+  text-align: center;
+  vertical-align: auto;
+  width: 100%;
+}
+
+.fa-flag-usa{
+  color: blue;
+  display: inline-block;
+  text-align: center;
+  vertical-align: auto;
+  width: 100%;
+}
+
+.fa-tree {
+  color: green;
+  display: inline-block;
+  text-align: center;
+  vertical-align: auto;
+  width: 100%;
+}
+
+.fa-laptop {
+  color: Black;
+  display: inline-block;
+  text-align: center;
+  vertical-align: auto;
+  width: 100%;
+}
+
+.fa-code {
+  color: purple;
+  display: inline-block;
+  text-align: center;
+  vertical-align: auto;
+  width: 100%;
+}
+
 section {
   margin: 0rem 23rem;
 }
