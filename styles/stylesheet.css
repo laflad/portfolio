@@ -62,8 +62,8 @@ p {
   width: 100%;
 }
 
-.fa-flag-usa{
-  color: blue;
+.fa-sun {
+  color: orange;
   display: inline-block;
   text-align: center;
   vertical-align: auto;
@@ -71,7 +71,7 @@ p {
 }
 
 .fa-tree {
-  color: green;
+  color: teal;
   display: inline-block;
   text-align: center;
   vertical-align: auto;
