@@ -3,13 +3,91 @@
 
 header {
   margin: 0rem 23rem;
-  /* float: left; */
   position: relative;
 }
 
 body {
   font-family: 'Nunito', sans-serif;
   font-weight: 200;
+}
+
+section {
+  margin: 0rem 23rem;
+}
+
+button, input, select, textarea {
+  font-size: 100%;
+  box-sizing: border-box;
+  display: block;
+  margin: 1rem;
+}
+
+fieldset {
+  border: none;
+  margin-left: -0.8rem;
+}
+
+/* The container */
+.radiobutton {
+  display: block;
+  position: relative;
+  padding-left: 35px;
+  margin-bottom: 12px;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default radio button */
+.radiobutton input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Create a custom radio button */
+.selected {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 25px;
+  width: 25px;
+  background-color: #eee;
+  border-radius: 50%;
+}
+
+/* On mouse-over, add a grey background color */
+.radiobutton:hover input ~ .selected {
+  background-color: hsl(179, 77%, 32%);
+}
+
+/* When the radio button is checked, add a blue background */
+.radiobutton input:checked ~ .selected {
+  background-color: hsl(179, 77%, 32%);
+}
+
+/* Create the indicator (the dot/circle - hidden when not checked) */
+.selected:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the indicator (dot/circle) when checked */
+.radiobutton input:checked ~ .selected:after {
+  display: block;
+}
+
+/* Style the indicator (dot/circle) */
+.radiobutton .selected:after {
+ 	top: 9px;
+	left: 9px;
+	width: 8px;
+	height: 8px;
+	border-radius: 50%;
+	background: white;
 }
 
 h1 {
@@ -89,8 +167,43 @@ p {
   width: 100%;
 }
 
-section {
-  margin: 0rem 23rem;
+.fa {
+  padding: 10px;
+  font-size: 10px;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+  opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+.fa-youtube {
+  background: #bb0000;
+  color: white;
+}
+
+.fa-instagram {
+  background: #125688;
+  color: white;
 }
 
 .links:hover {
@@ -152,7 +265,7 @@ section {
   text-align: left;
 }
 
-  .img3 {
+.img3 {
   width: 800px;
   display: block;
   margin: 0 auto;
@@ -206,6 +319,34 @@ section {
   margin: 10px;
 }
 
+.contact-page {
+  margin: 2rem 23rem;
+}
+
+.footercontainer {
+  background-color: hsl(179, 77%, 32%);
+}
+
 footer {
   text-align: center;
+  padding: 3rem 23rem;
+  position: relative;
+}
+
+.footertext {
+  color: white !important;
+}
+
+.buttonstyle {
+  background-color: hsl(179, 77%, 32%);
+  border: none;
+  color: white;
+  padding: 5px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  margin: 4px 2px;
+  cursor: pointer;
+  border-radius: 5px;
+  box-shadow: 2px 5px 7px #888888;
 }
